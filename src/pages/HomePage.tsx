@@ -1,5 +1,4 @@
 import { Container, Button, Row, Col, Carousel } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState , useEffect } from "react";
 import "./HomePage.css"; // Import the CSS file for custom styles
