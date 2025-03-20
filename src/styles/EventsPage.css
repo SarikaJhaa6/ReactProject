@@ -1,0 +1,176 @@
+/* Main container */
+.events-container {
+  padding: 40px;
+  min-height: 100vh;
+}
+
+/* Animated Header */
+.animated-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Category Filters */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.btn-3d-gradient {
+  background: linear-gradient(135deg, #007bff, #0056b3) !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 5px 15px rgba(0, 91, 187, 0.4);
+  border-radius: 8px !important;
+  transition: all 0.3s ease-in-out !important;
+  transform: translateY(-2px);
+}
+
+/* Subtle Hover Effect */
+.btn-3d-gradient:hover {
+  background: linear-gradient(135deg, #0056b3, #004085) !important;
+  box-shadow: 0 7px 20px rgba(0, 91, 187, 0.6);
+  transform: translateY(-4px);
+}
+@keyframes cascadeFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.cascade-text {
+  animation: cascadeFadeIn 1s ease-out;
+}
+
+.category-btn {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 20px;
+  transition: 0.3s;
+  border: 2px solid #007bff;
+  color: #007bff;
+  background-color: white;
+}
+
+.category-btn:hover,
+.active-category {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Event Cards */
+.event-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.event-details {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Category Badges */
+.category-badge {
+  display: inline-block;
+  padding: 10px;
+  font-size: 0.85rem;
+}
+
+.religious {
+  background-color: #ffcc0085;
+  color: black;
+  border: 1px solid hsla(39, 100%, 68%, 1);
+}
+
+
+.social {
+  background-color: hsl(93.5deg 92.13% 55.96% / 58%);
+  color: hsla(0, 0%, 13%, 1);
+  border: 1px solid #44da00;
+}
+
+.charity {
+  background-color: #8f19ff80;
+  color: hsla(0, 0%, 13%, 1);
+  border: 1px solid #9500dc;
+}
+
+/* No Events Message */
+.no-events {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.dark-overlay {
+  background: rgb(0 0 0 / 100%);
+}
+.modal-content-wrapper {
+  background: #f8f9fa !important;
+  border-radius: 18px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* File Upload Button */
+.file-upload-label:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(74, 144, 226, 0.5);
+}

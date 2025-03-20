@@ -1,0 +1,314 @@
+.gradient-text {
+    background: linear-gradient(90deg, rgb(4 125 255) 0%, #0245a8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .lead.text-muted {
+    color: rgba(33, 41, 41, 0.90) !important;
+    font-family: ui-rounded, sans-serif !important;
+  }
+
+  .section-wrapper {
+    padding: 30px 0;
+    background: rgb(255 255 255 / 60%);
+    backdrop-filter: blur(8px);
+    width: 100%;
+}
+  
+  #firstSection{
+    margin-bottom: 50px;
+    padding-top: 45px;
+    padding-bottom: 70px;
+  }
+  #mobileSection{
+    margin-bottom: 50px;
+  }
+  .carousel {
+    position: relative !important;
+  }
+  
+  .desktop-carousel-img {
+    width: 100% !important;
+    height: 400px !important; /* Set a consistent height */
+    object-fit: cover !important; /* Ensures all images fill the frame while maintaining aspect ratio */
+  }
+  
+  .mobile-carousel-img {
+    width: 100% !important;
+    object-fit: cover !important; /* Ensures all images fill the frame while maintaining aspect ratio */
+  }
+  
+
+  .carousel-indicators {
+    bottom: -45px !important; /* Moves indicators below the carousel */
+  }
+
+  .carousel-indicators [data-bs-target] {
+   background-color: #0245a8 !important;
+  }
+
+  /* Styling for the Features Section Title */
+.features-title {
+ font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00409f, #00409f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 74, 173, 0.2);
+    transform: perspective(1000px) rotateX(5deg) rotateY(-5deg);
+    display: inline-block;
+}
+
+/* Subtitle Styling */
+.features-subtext {
+  font-size: 1.2rem;
+  color: #555 !important;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .features-title {
+    font-size: 2rem;
+  }
+  
+  .features-subtext {
+    font-size: 1rem;
+  }
+}
+.avatar-group {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-left: -10px;
+  transition: transform 0.3s ease;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; } /* Softer blink */
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient {
+  background: linear-gradient(90deg, #007bff, #00c6ff, #007bff);
+  background-size: 300% 300%;
+  animation: gradientMove 6s ease infinite; /* Slowed to 6s */
+}
+.testimonial-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 40px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: -45px;
+}
+.testimonial-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 65%;
+  margin: 0 auto; /* Center the content horizontally */
+}
+.testimonial-title {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(to top, #0055a8, #0d6efd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 
+               2px 2px 5px rgba(0, 0, 0, 0.2); /* 3D Text Shadow */
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.testimonial-subtitle {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.testimonial-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Flex column for mobile devices */
+@media (max-width: 768px) {
+  .testimonial-layout {
+      flex-direction: column;
+  }
+}
+
+/* Flex row for larger screens */
+@media (min-width: 769px) {
+  .testimonial-layout {
+      flex-direction: row;
+  }
+}
+
+
+.testimonial-image-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.testimonial-background-circle {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #1e90ff, #00bfff); /* Vibrant Blue Gradient */
+  border-radius: 50%;
+  top: 10px;
+  left: -20px;
+  z-index: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 
+              inset 0 2px 4px rgba(255, 255, 255, 0.2); /* 3D Glow Effect */
+}
+
+.testimonial-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #1e90ff; /* Blue Border */
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 
+              0 3px 6px rgba(0, 0, 0, 0.2); /* 3D Shadow Effect */
+  transition: transform 0.2s ease-in-out;
+}
+
+
+/* Text Section */
+.testimonial-text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+.testimonial-name {
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #1e90ff, #00bfff); /* Vibrant Blue Gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin-top: 5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 
+               2px 2px 5px rgba(0, 0, 0, 0.2); /* 3D Shadow Effect */
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.testimonial-role {
+  color: #777;
+  font-size: 1rem;
+}
+
+.testimonial-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, #1e90ff, #00bfff); /* Vibrant Blue Gradient */
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 
+              0 3px 6px rgba(0, 0, 0, 0.2) inset; /* 3D Shadow Effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add hover effect for a nice interactive feel */
+.testimonial-nav:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Center icon inside */
+.testimonial-nav i {
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-nav.left {
+  left: 20px;
+}
+
+.testimonial-nav.right {
+  right: 20px;
+}
+
+/* Indicators */
+.testimonial-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.indicator.active {
+  background: linear-gradient(135deg, #1e90ff, #00bfff); /* Vibrant Blue Gradient */
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 
+              0 2px 4px rgba(0, 0, 0, 0.2) inset; /* 3D Shadow Effect */
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Optional hover for a smooth effect */
+.indicator.active:hover {
+  transform: scale(1.3);
+}
