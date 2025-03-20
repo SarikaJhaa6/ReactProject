@@ -4,7 +4,7 @@ import EventsPage from "./pages/EventsPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/scrolltotop";
+import ScrollToTop from "./components/scrollAnimation";
 import "./App.css";
 
 function App() {
