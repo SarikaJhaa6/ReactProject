@@ -421,7 +421,7 @@ const recentEvents = [
       "0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 12px rgba(63, 142, 252, 0.3)";
   }}
 >
-<Link to="/events" className="btn btn-primary btn-lg">
+<Link to="/events" className="btn btn-primary btn-lg" style={{background:'transparent', border:'none'}}>
   Explore Events
 </Link>
 </Button>
