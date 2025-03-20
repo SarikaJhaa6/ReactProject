@@ -2,7 +2,8 @@ import { Container, Button, Row, Col, Carousel } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { useState , useEffect } from "react";
 import "./HomePage.css"; // Import the CSS file for custom styles
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 import imageUrl1 from "../images/community.jpg";
 import imageUrl2 from "../images/community2.jpeg";
 import imageUrl3 from "../images/community3.jpg";
@@ -161,7 +162,6 @@ const recentEvents = [
     image: recent4,
   },
 ];
-const navigate = useNavigate();
 
   return (
     <>
@@ -198,10 +198,11 @@ const navigate = useNavigate();
               }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
               className="btn btn-primary btn-lg"
-              onClick={() => navigate("/events")}
             >
-              Explore Events
-            </motion.button>
+<Link to="/events" className="btn btn-primary btn-lg">
+  Explore Events
+</Link>            
+</motion.button>
           </div>
         </Col>
 
@@ -406,7 +407,6 @@ const navigate = useNavigate();
     transform: "translateY(-2px)",
     transition: "all 0.2s ease-in-out",
   }}
-  onClick={() => navigate("/events")}
 
   onMouseOver={(e) => {
     const target = e.currentTarget as HTMLButtonElement;
@@ -421,7 +421,9 @@ const navigate = useNavigate();
       "0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 12px rgba(63, 142, 252, 0.3)";
   }}
 >
-  Explore Events →
+<Link to="/events" className="btn btn-primary btn-lg">
+  Explore Events
+</Link>
 </Button>
 
     </Col>

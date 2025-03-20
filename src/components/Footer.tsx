@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Footer.css";
 import logo from "../images/Logocommunion.png";
+import { Link } from "react-router-dom";
 
 // Import Font Awesome Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -64,10 +65,9 @@ const Footer: React.FC = () => {
         <div className="footer-center" data-aos="fade-up" data-aos-delay="200">
           <h3>Company</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/events">Events</a></li>
-            <li><a href="/about">About</a></li>
-           
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/events">Events</Link></li>
+            <li><Link to="/about">About</Link></li>
           </ul>
         </div>
 
