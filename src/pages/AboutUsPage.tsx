@@ -24,6 +24,8 @@ const AboutUsPage: React.FC = () => {
   };
 
   return (
+    <div className="container mt-4">
+
     <div className="aboutus-container">
       {/* Hero Section */}
       <motion.div
@@ -142,6 +144,8 @@ const AboutUsPage: React.FC = () => {
 
 
     </div>
+    </div>
+
   );
 };
 

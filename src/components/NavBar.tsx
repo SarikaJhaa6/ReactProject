@@ -46,6 +46,7 @@ const NavBar = () => {
             >
               Events
             </NavLink>
+
             <NavLink
               to="/about"
               className={({ isActive }) =>
